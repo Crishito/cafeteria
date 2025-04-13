@@ -1,0 +1,287 @@
+/*Aquí va a ir los estilos css para el index.html
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Voy a darle estilos al body
+body 
+{
+    background-color: rgb(65, 190, 190);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+Voy a darle estilos al header
+header 
+{
+    background-color: bisque;
+    text-align: right;
+}
+
+header h1 
+{
+    color: rgb(36, 36, 173);
+}
+
+.menu 
+{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(52, 201, 35);
+}
+*/
+
+/* Aquí van los estilos CSS para el index.html */
+
+/* Restablece los márgenes y los rellenos predeterminados de todos los elementos HTML */
+* {
+    margin: 0; /* Elimina cualquier margen por defecto */
+    padding: 0; /* Elimina cualquier relleno por defecto */
+    /* Establece el modelo de cajas para asegurarse de que el tamaño de los elementos se calcule correctamente */
+    -webkit-box-sizing: border-box; /* Para navegadores basados en WebKit (como Chrome y Safari) */
+    -moz-box-sizing: border-box; /* Para navegadores basados en Mozilla (como Firefox) */
+    box-sizing: border-box; /* Establece el modelo de caja estándar para todos los navegadores */
+}
+
+/* Estilos generales para el body */
+body {
+    font-family: "Open Sans", Arial, Sans-serif; /* Establece la familia tipográfica */
+    font-size: 16px; /* Establece el tamaño base de la fuente */
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    width: 90%; /* Define el ancho del contenedor como un porcentaje del ancho total de la pantalla */
+    max-width: 1000px; /* Establece un límite máximo para el ancho del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde fuera del contenedor */
+}
+
+/* Estilos para el header */
+header {
+    width: 100%; /* Asegura que el header ocupe todo el ancho disponible */
+    background: url('../img/bg.jpg') #0f280c; /* Establece una imagen de fondo con un color de fondo */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el área del header */
+    background-attachment: fixed; /* Hace que la imagen de fondo se quede fija al hacer scroll */
+    background-position: center 0; /* Centra la imagen de fondo en el eje horizontal */
+}
+
+/* Estilos para el contenedor dentro del header */
+header .contenedor {
+    position: relative; /* Permite posicionar elementos dentro de este contenedor de forma absoluta */
+    height: 700px; /* Establece la altura del header */
+}
+
+/* Estilos para el menú dentro del header */
+header .menu {
+    width: 100%; /* Establece el ancho del menú al 100% */
+    text-align: right; /* Alinea los elementos de texto a la derecha */
+}
+
+/* Estilos para los enlaces del menú */
+header .menu a {
+    color: #fff; /* Establece el color del texto a blanco */
+    font-size: 20px; /* Establece el tamaño de la fuente para los enlaces */
+    font-weight: 300; /* Establece un peso de fuente ligero */
+    margin: 40px 20px; /* Aplica un margen alrededor de los enlaces */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    position: relative; /* Permite usar el posicionamiento relativo para los enlaces */
+}
+
+/* Estilos para el estado hover de los enlaces */
+header .menu a:hover {
+    color: #18a08c; /* Cambia el color del texto cuando se pasa el mouse sobre el enlace */
+    text-decoration: underline; /* Agrega un subrayado cuando se pasa el mouse sobre el enlace */
+}
+
+/* Estilos para el texto dentro del header */
+header .texto {
+    width: 100%; /* Establece el ancho del texto al 100% */
+    color: #fff; /* Establece el color del texto a blanco */
+    position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
+    top: 50%; /* Coloca el texto en el centro vertical del contenedor */
+    margin-top: -52px; /* Ajusta el texto para que esté exactamente en el centro */
+}
+
+/* Estilos para el nombre dentro del texto del header */
+header .texto .nombre {
+    font-size: 50px; /* Establece el tamaño de la fuente del nombre */
+    font-weight: 600; /* Establece un peso de fuente más grueso para el nombre */
+}
+
+/* Estilos para el span dentro del nombre */
+header .texto .nombre span {
+    font-weight: 300; /* Establece un peso de fuente más ligero para el span */
+}
+
+/* Estilos para el subtítulo dentro del header */
+header .texto h3 {
+    font-weight: 300; /* Establece un peso de fuente ligero */
+    font-size: 25px; /* Establece el tamaño de la fuente del subtítulo */
+    font-style: italic; /* Aplica estilo cursivo al texto */
+}
+
+/* Estilos para la sección principal */
+.main {
+    background: url('../img/bg-textura.png'); /* Establece una imagen de fondo para la sección principal */
+    background-repeat: repeat; /* Hace que la imagen de fondo se repita */
+}
+
+/* Estilos para la sección "acerca de" */
+.main .acerca-de .contenedor {
+    overflow: visible; /* Permite que el contenido desbordado sea visible */
+    position: relative; /* Permite usar el posicionamiento absoluto para elementos dentro de este contenedor */
+}
+
+/* Estilos para la foto dentro de la sección "acerca de" */
+.main .acerca-de .foto {
+    width: 80%; /* Establece el ancho de la foto como un porcentaje */
+    position: absolute; /* Posiciona la foto de forma absoluta */
+    left: 0; /* Alinea la foto al borde izquierdo */
+    top: -50px; /* Ajusta la posición de la foto verticalmente */
+    z-index: 0; /* Coloca la foto detrás de otros elementos */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Agrega sombra alrededor de la foto */
+}
+
+/* Estilos para las imágenes dentro de la sección "acerca de" */
+.main .acerca-de .foto img{
+    vertical-align: top; /* Alinea la imagen al tope */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+}
+
+/* Estilos para los artículos dentro de la sección "acerca de" */
+.main .acerca-de article {
+    background: #fff; /* Establece el color de fondo blanco para los artículos */
+    padding: 20px; /* Aplica relleno alrededor del contenido del artículo */
+    width: 75%; /* Establece el ancho del artículo */
+    position: relative; /* Permite usar el posicionamiento relativo dentro del artículo */
+    top: 50px; /* Desplaza el artículo hacia abajo */
+    z-index: 1; /* Coloca el artículo encima de otros elementos */
+    float: right; /* Hace que el artículo se alinee a la derecha */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Agrega sombra alrededor del artículo */
+}
+
+/* Estilos para los encabezados dentro de los artículos */
+.main .acerca-de article h3 {
+    font-size: 50px; /* Establece el tamaño de la fuente de los encabezados */
+    font-weight: 300; /* Establece un peso de fuente ligero para los encabezados */
+    margin-bottom: 40px; /* Aplica un margen inferior a los encabezados */
+}
+
+/* Estilos para los párrafos dentro de los artículos */
+.main .acerca-de article p {
+    line-height: 20px; /* Establece la altura de línea de los párrafos */
+    margin-bottom: 15px; /* Aplica un margen inferior a los párrafos */
+}
+
+/* Estilos para la sección del menú */
+.main .menu {
+    padding-top: 700px; /* Aplica relleno en la parte superior de la sección del menú */
+    margin-bottom: 50px; /* Aplica un margen inferior a la sección del menú */
+}
+
+/* Estilos para el título del menú */
+.main .menu .titulo {
+    font-size: 40px; /* Establece el tamaño de la fuente del título */
+    font-weight: 300; /* Establece un peso de fuente ligero */
+    text-align: center; /* Alinea el texto al centro */
+    margin-bottom: 40px; /* Aplica un margen inferior al título */
+}
+
+/* Estilos para los contenedores del menú */
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+    border: 2px solid #000; /* Aplica un borde alrededor de los contenedores */
+    background: url(../img/menu-textura.jpg); /* Establece el fondo de los contenedores como transparente */
+    padding: 10px; /* Aplica relleno dentro de los contenedores */
+    overflow: hidden; /* Oculta cualquier contenido desbordado */
+    box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, 0.5); /* Agrega sombra alrededor de los contenedores */
+
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el área del header */
+    background-attachment: fixed; /* Hace que la imagen de fondo se quede fija al hacer scroll */
+    background-position: center 0; /* Centra la imagen de fondo en el eje horizontal */
+}
+
+/* Estilos para los artículos dentro del menú */
+.main .menu article {
+    width: 50%; /* Establece el ancho de los artículos del menú */
+    float: left; /* Hace que los artículos se alineen a la izquierda */
+    padding: 20px; /* Aplica relleno dentro de los artículos */
+}
+
+/* Estilos para las categorías dentro del menú */
+.main .menu .categoria {
+    font-size: 22px; /* Establece el tamaño de la fuente de las categorías */
+    font-weight: 700; /* Establece un peso de fuente más grueso para las categorías */
+    margin-bottom: 40px; /* Aplica un margen inferior a las categorías */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para los platillos dentro del menú */
+.main .menu .platillo {
+    margin-bottom: 30px; /* Aplica un margen inferior a los platillos */
+    padding-bottom: 20px; /* Aplica relleno en la parte inferior de los platillos */
+    border-bottom: 4px dotted #000; /* Agrega una línea punteada en la parte inferior de los platillos */
+    overflow: hidden; /* Oculta cualquier contenido desbordado */
+}
+
+.main .menu .nombre{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.main .menu .precio{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.main .menu .descripcion{
+    font-size: 16px;
+    color: #676767;
+    clear: both;
+}
+
+/*Estilos a la sección galeria*/
+.main .galeria{
+    /*Cualquier*/ 
+    overflow: hidden;
+}
+
+.main .galeria .foto{
+    /*Anchura*/
+    width: 25%;
+    /*Flote*/
+    float: right;
+}
+/*Caracteristicas a la imagen*/
+.main .galeria .foto img{
+    /*Ocupe el 100% del contenedor (se adapte)*/
+    width: 100%;
+    /*Se me alinee de forma vertical en la parte de arriba*/
+    vertical-align: top;
+    /*Opacidad (genera una marca de agua)*/
+    opacity: 0.7;
+}
+
+.main .galeria .foto img:hover{
+     /*La opaidad se va a ver al 100% al pasar el mouse*/
+     /*la opacidad ya no sea de .7 si no de .1*/
+     opacity: 1;
+     /*Tipo de aceleracion de la animacion lenta medio y vuelve al inal*/
+     -webkit-transition: all 0.35 ease;
+     /*Transision Caracteristica (opera)*/
+     -o-transition: all 0.3s ease;
+     /*Transision Le de a todos los elementos a navegadores modernos*/
+     transition: all 0.3s ease;
+}

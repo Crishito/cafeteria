@@ -1,48 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caferería Cocolatada</title>
-    <style>
-        body {
-            background-color: rgb(194, 92, 163);
-        }
-        .cabecera-derecha{
-            with: 80;
-            background-color: rgb(192, 207, 202) ;
-            
-        }
-        .cabecera-izquierda{
-            with: 20;
-            background-color: rgb(10, 60, 228);
-            margin-top: -20px;
-            margin-left: 1200px;
-                    }        
-        
-        a{
-            color: rgb(250, 249, 247);
-        }
-        .menu {
-            color: rgb(43, 226, 226);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Cafeteria Colife</title>
+
 </head>
+
 <body>
+    <!--
+        Los nombres de los proyectos no pueden tener espacios, por eso se usa el guion bajo (_)
+        o el guion (-) para separar las palabras. En este caso se usó el guion bajo (_).
+        Tampoco puede utiliza o empezar con simboles especiales o numeros.
+        Tampoco los proyectos se generan o se crean en mayusculas. 
+        No se puede tener un nombre de proyecto muy largo, por eso se recomienda usar nombres cortos.    
+    -->
     <!--Inicio del header-->
     <header>
         <!--Menú de navegación-->
-        <div class="cabecera-derecha">
-            <nav>
-                <a class="menu" href="#" id="btn-acerca-de">Acerca de</a>
-                <a href="#" id="menu">Menú</a>
-                <a href="#" id="galeria">Galería</a>
-                <a class="menu" href="#" id="ubicacion">Ubicación</a>
-            </nav> 
+        <div class="contenedor">
+
+            <nav class="menu">
+                <a href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-menu">Menú</a>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
+
+            </nav>
+            <div class="texto">
+                <h1 class="nombre">Cafetería <span>Colife</span></h1>
+                <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
+            </div>
         </div>
-        <div class="cabecera-izquierda">
-            <a href="">Hola</a>
+    </header><!--Fin del header-->
+    <!--Inicio del la sección main-->
+    <section class="main">
+        <!--Inicio Acerca de-->
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/acerca-de.jpg" alt="Acerca de lobby">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>
+                        Situada en pleno corazón del Centro Histórico de Quito, esta cafetería abrió sus puertas 
+                        en 1962, justo en un momento de profunda transformación para la ciudad. El local, 
+                        ubicado en una de las plazas más emblemáticas, estaba rodeado de la imponente 
+                        arquitectura colonial que caracteriza al casco antiguo de la capital ecuatoriana, y se 
+                        convirtió rápidamente en un punto de encuentro vital para los habitantes del centro 
+                        histórico. Desde su inauguración, la cafetería se destacó no solo por la calidad de su café, 
+                        proveniente de las mejores regiones productoras del Ecuador, sino también por su 
+                        ambiente acogedor, que invitaba tanto a los locales como a los turistas a disfrutar de un 
+                        espacio que combinaba la tradición con la modernidad de los años 60. Durante sus 
+                        primeros años, el lugar fue testigo del creciente dinamismo urbano de Quito, ofreciendo 
+                        a los comensales no solo una bebida reconfortante, sino también un refugio en el que 
+                        se gestaban discusiones intelectuales, culturales y políticas que marcarían la historia de 
+                        la ciudad.
+                    </p>
+                    <p>
+                        A lo largo de seis décadas, esta cafetería se mantuvo como un referente clave del Centro 
+                        Histórico, resistiendo los cambios sociales y económicos que atravesó Quito durante 
+                        este periodo. Su ubicación estratégica, cerca de iglesias centenarias, museos y plazas 
+                        históricas, permitió que el local fuera siempre un lugar de paso obligado para quienes 
+                        recorrían el centro. A lo largo de los años, la cafetería se adaptó a los cambios del 
+                        entorno, sin perder la esencia que la caracterizó desde sus inicios: la preservación del 
+                        legado cultural de la ciudad y la calidad de sus productos. Hoy, tras 63 años de historia 
+                        desde su apertura en 1962, el lugar sigue siendo un símbolo de la vida social de Quito, 
+                        un testimonio de la evolución de la ciudad y un espacio en el que convergen 
+                        generaciones de ciudadanos, turistas y amantes del café, que siguen disfrutando de su 
+                        cálido ambiente y su rica tradición
+
+                    </p>
+                </article>
+            </div>
+        </section><!--Fin Acerca de-->
+        <!--Inicio de la sección menú-->
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <div class="contenedor-menu2">
+                    <article>
+                        <p class="categoria">De comer</p>
+                        <div class="platillo">
+                            <p class="nombre">Arroz camarón</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con camarón viene arroz, camarón, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Aroz con pollo</p>
+                            <p class="precio">$5.50</p>
+                            <p class="descripcion">El arroz con pollo viene arroz, pollo, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con carne</p>
+                            <p class="precio">$6.50</p>
+                            <p class="descripcion">El arroz con carne viene arroz, carne, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con menestra</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con menestra viene arroz, menestra, platano, yuca frita</p>
+
+                        </div>
+
+                    </article><!--Fin de la sección de comida-->
+                    <!--Inicio de sección bebidas-->
+                    <article>
+                        <p class="categoria">Bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Café</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion">Café americano</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche</p>
+                            <p class="precio">$2.00</p>
+                            <p class="descripcion">Café con leche</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche condensada</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Café con leche condensada</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche evaporada</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Café con leche evaporada</p>
+                        </div>
+                    </article><!--Fin de la sección de bebidas-->
+                </div>
+            </div>
+        </section><!--Fin de la sección menú-->
+        <!--Inicio de la sección galería-->
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="img/1.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/2.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/3.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/4.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/5.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/6.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/7.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/8.jpg" alt="cafe">
+            </div>
+        </section><!--Fin galeria-->
+        <!--Inicio de ubicación-->
+        <section class="ubicacion" id="btn-ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+                <div>
+                    <p class="calle">E5 <br>Mz-111</p><br>
+                    <p class="telefono">(+593) 0978662154</p>
+                    <p class="correo">cafeteria@colife.com</p>
+                </div>
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-seman">Lunes a Viernes <br>7:00-21:00</p>
+                    <p class="fin-semana">Sabados y Domingo <br>11:00-23:00</p>
+                </div>
+            </div>
+        </section> <!--Fin ubicación-->
+       <!--Inicio del mapa-->
+       <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.57751339834!2d-78.51858270438409!3d-0.22056689023997578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5998777862fb3%3A0x58bdbdb54ec52db!2sDulceria%20Colonial!5e0!3m2!1ses!2sec!4v1744424148422!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" frameborder="0"></iframe>
+       </section>
+    </section> <!--Fin de la seccion main-->
+    <footer>
+        <div class="contenedor">
+            <div class="copyright">
+                <p> &COPY; Todos los derechos reservados 2015-2025</p>
+            </div>
         </div>
-    </header>
+    </footer>
+
 </body>
+
 </html>
