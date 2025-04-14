@@ -146,7 +146,7 @@ header .texto h3 {
 .main .acerca-de .foto {
     width: 80%; /* Establece el ancho de la foto como un porcentaje */
     position: absolute; /* Posiciona la foto de forma absoluta */
-    left: 0; /* Alinea la foto al borde izquierdo */
+    left: 100px; /* Alinea la foto al borde izquierdo */
     top: -50px; /* Ajusta la posición de la foto verticalmente */
     z-index: 0; /* Coloca la foto detrás de otros elementos */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Agrega sombra alrededor de la foto */
@@ -164,10 +164,11 @@ header .texto h3 {
     padding: 20px; /* Aplica relleno alrededor del contenido del artículo */
     width: 75%; /* Establece el ancho del artículo */
     position: relative; /* Permite usar el posicionamiento relativo dentro del artículo */
-    top: 50px; /* Desplaza el artículo hacia abajo */
+    top: 450px; /* Desplaza el artículo hacia abajo */
     z-index: 1; /* Coloca el artículo encima de otros elementos */
-    float: right; /* Hace que el artículo se alinee a la derecha */
+    float: left; /* Hace que el artículo se alinee a la derecha */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Agrega sombra alrededor del artículo */
+    
 }
 
 /* Estilos para los encabezados dentro de los artículos */
@@ -185,14 +186,14 @@ header .texto h3 {
 
 /* Estilos para la sección del menú */
 .main .menu {
-    padding-top: 700px; /* Aplica relleno en la parte superior de la sección del menú */
+    padding-top: 1100px; /* Aplica relleno en la parte superior de la sección del menú */
     margin-bottom: 50px; /* Aplica un margen inferior a la sección del menú */
 }
 
 /* Estilos para el título del menú */
 .main .menu .titulo {
     font-size: 40px; /* Establece el tamaño de la fuente del título */
-    font-weight: 300; /* Establece un peso de fuente ligero */
+    font-weight: 700; /* Establece un peso de fuente ligero */
     text-align: center; /* Alinea el texto al centro */
     margin-bottom: 40px; /* Aplica un margen inferior al título */
 }
@@ -201,7 +202,7 @@ header .texto h3 {
 .main .menu .contenedor-menu,
 .main .menu .contenedor-menu2 {
     border: 2px solid #000; /* Aplica un borde alrededor de los contenedores */
-    background: url(../img/menu-textura.jpg); /* Establece el fondo de los contenedores como transparente */
+    background: url(../img/menu-textura.avif); /* Establece el fondo de los contenedores como transparente */
     padding: 10px; /* Aplica relleno dentro de los contenedores */
     overflow: hidden; /* Oculta cualquier contenido desbordado */
     box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, 0.5); /* Agrega sombra alrededor de los contenedores */
@@ -216,6 +217,7 @@ header .texto h3 {
     width: 50%; /* Establece el ancho de los artículos del menú */
     float: left; /* Hace que los artículos se alineen a la izquierda */
     padding: 20px; /* Aplica relleno dentro de los artículos */
+    color: white;
 }
 
 /* Estilos para las categorías dentro del menú */
@@ -224,14 +226,16 @@ header .texto h3 {
     font-weight: 700; /* Establece un peso de fuente más grueso para las categorías */
     margin-bottom: 40px; /* Aplica un margen inferior a las categorías */
     text-align: center; /* Alinea el texto al centro */
+    color:rgb(233, 164, 94);
 }
 
 /* Estilos para los platillos dentro del menú */
 .main .menu .platillo {
     margin-bottom: 30px; /* Aplica un margen inferior a los platillos */
     padding-bottom: 20px; /* Aplica relleno en la parte inferior de los platillos */
-    border-bottom: 4px dotted #000; /* Agrega una línea punteada en la parte inferior de los platillos */
+    border-bottom: 4px dotted #fefafa; /* Agrega una línea punteada en la parte inferior de los platillos */
     overflow: hidden; /* Oculta cualquier contenido desbordado */
+    
 }
 
 .main .menu .nombre{
@@ -248,7 +252,7 @@ header .texto h3 {
 
 .main .menu .descripcion{
     font-size: 16px;
-    color: #676767;
+    color: #d1c518;
     clear: both;
 }
 
@@ -284,4 +288,133 @@ header .texto h3 {
      -o-transition: all 0.3s ease;
      /*Transision Le de a todos los elementos a navegadores modernos*/
      transition: all 0.3s ease;
+}
+
+/*-------Ubicación--------*/
+.mian .ubicacion{
+    background: #fff; /*Color de fondo*/
+    padding: 60px; /* Relleno interno */
+    overflow: hidden; /*Contenido que se salga del contenedor no se muestren*/
+}
+
+/*Dar estilos a mi titulo*/
+.main .ubicacion .titulo{
+    text-align: center; /*Texto centrado*/
+    font-size: 40px; /*Tamaño del texto*/
+    line-height: 40px; /*Espacio entre lineas*/
+    font-weight: 300; /*Groso de texto*/
+    margin-bottom: 40px; /*Espacio del margen en la parte inferior*/
+}
+/*Dar estilos a mi textos dirección*/
+.main .ubicacion .direccion{
+    float: left; /*Que flote a la iquierda*/
+    width: 50%; /*Ocupe el 50% de mi contenedor*/
+    text-align: left; /*Texto alineado a la izquierda*/
+}
+/*Dar estilos a mi texto horarios*/
+.main .ubicacion .horarios{
+    float: right; /*Que flote a la derecha*/
+    width: 50%; /*Ocupe el 50% de mi contenedor*/
+    text-align: right; /*Texto alineado a la derecha*/
+    overflow: hidden; /*Contenido que se salga del contenedor no se muestren*/
+}
+/*Dar estilos a mi texto calle*/
+.main .ubicacion .direccion .calle{
+    margin-bottom: 15px; /*le damos un margen*/
+}
+/*Dar estilos a mi etiqueta h4*/
+.main .ubicacion .horarios h4{
+    text-align: center; /*Alineamos el texto*/
+    margin-bottom: 20px; /*Le damos un margen*/
+}
+/*Dar estilos mis secciones*/
+
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana{
+    width: 50%; /*Ocupe el 50% de mi contenedor*/
+    float: left; /*Que flote a la izquierda*/
+    text-align: center; /*Alineamos el texto*/
+}
+/*Dar estilos a mi mapa*/
+.main .mapa{
+    width: 100%; /*Ocupe el 100% de mi contenedor*/
+    overflow: hidden; /*Contenido que se salga del contenedor no se muestren*/
+    
+}
+
+/*Dar estilos a mi mapa etiqueta*/
+.main .mapa iframe{
+    width: 100%; /*Ocupe todo el ancho disponible*/
+    max-height: 600px; /*No tenga borde*/
+}
+
+/*-------footer--------*/
+footer{
+    background: #000; /*Color*/
+}
+
+/*Dar estilos a mi clase */
+footer .copyright{
+    text-align: center; /*centra el texto*/
+    padding: 15px 0;  /*espaciado*/
+    color: #fff; /*color de mi texto*/
+}
+
+/*-----------MEDIA QUERIES-----------*/
+@media screen and (max-width: 800px){ 
+    /* Estilos dentro de la media query */
+    header .contenedor{
+        position: static; /* Cambia el valor de posicion, vuelve al valor por defecto (flujo normal) */
+        height: auto; /* Ajusta la altura del contenedor automáticamente al contenido */
+    }
+
+    header .texto{
+        position: static; /* Cambia la posición a estática (vuelve al flujo normal) */
+        margin: 100px 0; /* Añade un margen de 100px en la parte superior e inferior */
+    }
+
+    header .menu{
+        text-align: center; /* Centra el texto dentro del menú */
+    }
+
+    header .menu a{
+        margin: 10px 20px; /* Añade un margen de 10px arriba y abajo, y 20px a los lados de cada enlace */
+    }
+
+    header .texto .nombre{
+        font-size: 30px; /* Ajusta el tamaño de la fuente del nombre a 30px */
+    }
+
+    header .texto h3{
+        font-size: 18px; /* Ajusta el tamaño de la fuente del encabezado (h3) a 18px */
+    }
+
+    .main .acerca-de .foto{
+        width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+        position: relative; /* Establece la posición de la imagen a relativa */
+    }
+
+    .main .acerca-de article{
+        position: relative; /* Establece la posición del artículo a relativa */
+        width: 100%; /* Hace que el artículo ocupe todo el ancho disponible */
+        top: -50px; /* Mueve el artículo 50px hacia arriba */
+        transform: translate(0px, 0); /* No realiza ningún desplazamiento adicional */
+    }
+
+    .main .menu{
+        padding-top: 300px; /* Añade 300px de relleno en la parte superior del menú */
+    }
+
+    .main .menu article{
+        width: 100%; /* Hace que los artículos del menú ocupen todo el ancho disponible */
+    }
+
+    .main .galeria .foto{
+        width: 50%; /* Hace que las imágenes de la galería ocupen la mitad del ancho disponible */
+    }
+
+    .main .mapa{
+        width: 80%; /* Hace que el mapa ocupe el 80% del ancho disponible */
+        margin: auto; /* Centra el mapa en el contenedor */
+    }
 }
