@@ -334,6 +334,7 @@ header .texto h3 {
     width: 50%; /*Ocupe el 50% de mi contenedor*/
     float: left; /*Que flote a la izquierda*/
     text-align: center; /*Alineamos el texto*/
+    
 }
 /*Dar estilos a mi mapa*/
 .main .mapa{
@@ -361,6 +362,7 @@ footer .copyright{
 }
 
 /*-----------MEDIA QUERIES-----------*/
+/*Si mi dispositivo tiene una anchura mas de 800px*/
 @media screen and (max-width: 800px){ 
     /* Estilos dentro de la media query */
     header .contenedor{
@@ -380,6 +382,8 @@ footer .copyright{
     header .menu a{
         margin: 10px 20px; /* Añade un margen de 10px arriba y abajo, y 20px a los lados de cada enlace */
     }
+
+    header 
 
     header .texto .nombre{
         font-size: 30px; /* Ajusta el tamaño de la fuente del nombre a 30px */
@@ -418,3 +422,4 @@ footer .copyright{
         margin: auto; /* Centra el mapa en el contenedor */
     }
 }
+
